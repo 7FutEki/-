@@ -7,27 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Black">
-        <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29,-4,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="63" Fill="#FF7DE013">
-            <Line.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-45.098"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Line.RenderTransform>
-        </Line>
-        <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29,10,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="63">
-            <Line.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-45.098"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Line.RenderTransform>
-        </Line>
-        <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29,23,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="64">
+        
+            <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29, -4,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="63" Fill="#FF7DE013">
+                <Line.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-45.098"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Line.RenderTransform>
+            </Line>
+            <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29,8.5,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="64">
+                <Line.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-44.787"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Line.RenderTransform>
+            </Line>
+            <Line  HorizontalAlignment="Left" X1=" 10" Y1="10" X2="50" Y2="50" Stroke="#FF7DE013" StrokeThickness="4"  VerticalAlignment="Top" Margin="29,23,0,0" RenderTransformOrigin="0.5,0.5" Height="63" Width="64">
             <Line.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -37,26 +38,28 @@
                 </TransformGroup>
             </Line.RenderTransform>
         </Line>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="113,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="214,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="315,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="416,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="517,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
-        <Rectangle HorizontalAlignment="Left" Height="27" Margin="618,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
         <StackPanel>
-            <TextBlock TextWrapping="Wrap" x:Name ="email" Text="Email or Number Phone" Margin ="170, 140, 240, 265" Background="#FF00FF" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Elephant" FontSize="24" FontWeight="Bold"/>
+            <Rectangle HorizontalAlignment="Left" Height="27" Margin="113,27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="214, -27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="315,-27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="416,-27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="517,-27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="618,-27,0,0" Stroke="#FF7DE013" VerticalAlignment="Top" Width="100" Fill="#FF7DE013"/>
+        </StackPanel>
+            <StackPanel>
+            <TextBox TextWrapping="Wrap" x:Name ="email" Text="Email or Number Phone" Margin ="170, 140, 240, 265" Background="#FF00FF" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Elephant" FontSize="24" FontWeight="Bold"/>
             
         </StackPanel>
         <StackPanel>
             
         
-        <TextBlock TextWrapping="Wrap" Text="Password" Margin ="170, 200, 240, 205" Background="#FF00FF" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Elephant" FontSize="24" FontWeight="Bold"/>
+        <TextBox TextWrapping="Wrap" x:Name="pswd" Text="Password" Margin ="170, 200, 240, 205" Background="#FF00FF" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Elephant" FontSize="24" FontWeight="Bold"/>
         </StackPanel>
         <StackPanel>
-            <CheckBox Margin="170,250,240, 170" Content ="Нажмите, чтобы согласиться с обработкой персональных данных" Background="#ff00ff" Foreground="White"/>
+            <CheckBox x:Name="cb1" Margin="170,250,240, 170" Content ="Нажмите, чтобы согласиться с обработкой персональных данных" Background="#ff00ff" Foreground="White"/>
             </StackPanel>
         <StackPanel>
-            <CheckBox Margin="170,280,240, 140" Content ="Нажмите, чтобы принять условия пользования сервисом" Background="#ff00ff" Foreground="White"/>
+            <CheckBox x:Name="cb2" Margin="170,280,240, 140" Content ="Нажмите, чтобы принять условия пользования сервисом" Background="#ff00ff" Foreground="White"/>
             </StackPanel>
         <StackPanel>
             <Button Click="Button_Click"  Content="Register" Margin="230, 320, 290, 20" Height="23" RenderTransformOrigin="0.5,0.5" Background="#FF7DE013" FontFamily="Elephant" FontSize="15" BorderBrush="{x:Null}">

@@ -28,6 +28,22 @@ namespace WpfApp2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrEmpty(email.Text))
+            {
+                return;
+            }
+            if (string.IsNullOrEmpty(pswd.Text))
+            {
+                return;
+            }
+            if (!cb1.IsChecked.Value)
+            {
+                return;
+            }
+            if (!cb2.IsChecked.Value)
+            {
+                return;
+            }
             MessageBox.Show("Успешная регистрация, спасибо");
         }
     }
